@@ -1,0 +1,187 @@
+﻿.header {
+  width: 100%;
+  background: #007765;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.header__inner {
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__contents {
+  padding-top: 10px;
+}
+.header__contents span, a {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.net {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-image: url('Jumbotron.png');
+  background-size: cover;
+  background-position: center center;
+}
+.net_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  height: 303px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.text_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  background: #EEEEEE;
+}
+.text {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background: #EEEEEE;
+}
+.text p {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+}
+
+.hero_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.hero {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url('https://i.ibb.co/PM6cMBn/image.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero__message {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-size: 62px;
+  font-weight: 500;
+  color: #007765;
+  text-align: center;
+}
+
+.coin_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.coin {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.coin__logo {
+  float: left;
+  margin-right: 30px;
+}
+.coin p {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+}
+
+.team {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background: #EEEEEE;
+}
+.team_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  background: #EEEEEE;
+}
+.blocks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.block {
+  width: 350px;
+  height: 283px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mini_title {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #007765;
+  text-align: center;
+}
+.mini {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.footer {
+  width: 100%;
+  background: #333333;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.footer_container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.footer_container p {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}

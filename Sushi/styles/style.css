@@ -1,0 +1,304 @@
+﻿@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@keyframes navlinks {
+    60% {color: white;}
+    100% {
+        color: darksalmon; 
+        transform: translateX(10px);
+    }
+}
+@keyframes greet {
+    from {color:red;}
+    to {color: green;}
+}
+@keyframes footerlink {
+    from {
+        left: -100pt;
+        background-color: bisque;
+        transform: scale(0.2, 0.2);
+    }
+    33% {
+        left: 30pt;
+        background-color: bisque;
+        transform: scale(0.2, 0.2);
+    }
+    67% {
+        left: 30pt;
+        background-color: bisque;
+        transform: scale(1, 1);
+    }
+    to {
+        left: 30pt;
+        background-color: lightcoral;
+        transform: scale(1, 1);
+    }
+}
+@keyframes footerlink2 {
+    from {
+        left: -200pt;
+        background-color: bisque;
+        transform: scale(0.2, 0.2);
+    }
+    33% {
+        left: 175pt;
+        background-color: bisque;
+        transform: scale(0.2, 0.2);
+    }
+    67% {
+        left: 175pt;
+        background-color: bisque;
+        transform: scale(1, 1);
+    }
+    to {
+        left: 175pt;
+        background-color: lightcoral;
+        transform: scale(1, 1);
+    }
+}
+body {
+    font-family: Arial;
+    margin: 0px;
+}
+header {
+    background-color: white;
+    height: 80pt;
+    left: 0pt;
+    top: 0pt;
+    right: 0pt;
+}
+header, nav, main, footer {position: fixed;}
+.pos1, .pos2, .pos3, .pos4, .pos5, .pos6 {
+    position: absolute;
+}
+.pos1 {
+    left: 0pt;
+    top: 0pt;
+    width: 140pt;
+}
+.pos1 img {height: 80pt;}
+.pos2 {
+    left: 140pt;
+    top: 29pt;
+    right: 0pt; /* Отсчитывается от правой границы родителя*/
+}
+.pos2 h1 {
+    font: bold italic 42pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10pt;
+    margin: 0px;
+    background-color: darksalmon;
+}
+.pos3 {
+    left: 140pt;
+    top: 4pt;
+    right: 70pt;
+}
+.pos3 h1 {
+    font: bold 24pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 6pt;
+    margin: 0px;
+    color: darksalmon;
+}
+.pos4 {
+    top: 0pt;
+    right: 20pt;
+}
+.pos5 {
+    left: 25pt;
+    top: 30pt;
+    width: 120pt;
+    height: 50pt;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 5pt;
+    animation: footerlink 1.5s 1s both;
+}
+.pos5 a, .pos6 a {
+    font: bold 20pt Verdana;
+    text-decoration: none;
+    color: bisque;
+    margin: 0px;
+}
+.pos5 a:hover, .pos6 a:hover {
+    color: brown;
+}
+.pos6 {
+    left: 175pt;
+    top: 30pt;
+    width: 120pt;
+    height: 50pt;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 5pt;
+    animation: footerlink2 1.5s 2.5s both;
+}
+nav {
+    width: 150px;
+    padding: 10px;
+    left: 0pt;
+    top: 100pt;
+    bottom: 120pt;
+    background-color: bisque;
+    /*margin: 10px 40px 20px 0px; варианты: верх, право, низ, лево ; верх, право и лево, низ ; верх и низ, право и лево
+     border: black medium double;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px darkgrey, 0 0 5px 5px darkgrey inset;  x - смещение тени по горизонтали, y - смещение тени по вертикали, 
+    r - радиус размытия тени, s - радиус распространения тени (если не указать или поставить 0, то тень будет такого же расмера как и элемент),
+    color - если не указать, то тень будет цвета текста, inset - тень внутри элемента */
+}
+nav a {
+    display: block;
+}
+nav div, nav a {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+nav a:active, nav a:hover {
+    text-decoration: none;  
+    transform: translateX(10px);
+    animation-name: navlinks;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+}
+main {
+    background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 140pt;
+    top: 100pt;
+    right: 0pt;
+    bottom: 120pt;
+    overflow: auto;
+}
+p {font-size: 14pt !important;}
+p.greeting {
+    font-size: 24pt;
+    animation: greet 4s linear infinite alternate;
+}
+p.greeting:hover {
+    animation-play-state: paused;
+}
+ol {list-style-type: upper-roman;}
+li {line-height: 1.5;}
+.bigger {font-size: 16pt;}
+table.catalog {
+    border-collapse: collapse;
+    width: 70%;
+    min-width: 12sm;
+}
+table.catalog h3 {
+    font-family: "Caviar Dreams";
+    font-size: 20pt;
+    font-variant: small-caps;
+    letter-spacing: 2pt;
+}
+table.catalog h3::first-letter {text-transform: uppercase;}
+table.catalog p::first-letter {vertical-align: text-top;}
+table.catalog h3::after {content: ":";}
+table.catalog tr:first-child td {
+    border-top: none;
+    width:50%;
+}
+table.catalog tr:last-child td {border-bottom: none;}
+table.catalog td {
+    border-top: black thin dotted;
+    border-bottom: black thin dotted;
+    padding: 10px;
+}
+table.catalog td  p:first-of-type::first-letter {font-size: 24pt}
+table.catalog img {width: 100%;}
+table.pricelist thead th {
+    color: white;
+    background-color: grey;
+}
+table.pricelist tbody th[colspan], table.pricelist tbody td[colspan] {text-align: center}
+table.pricelist tbody tr td:last-child:not(:only-child) {background-color: lightgrey}
+table.pricelist th, table.pricelist td {
+    border: grey thin solid;
+    padding: 4px;
+    width: 100px;
+}
+table.pricelist tfoot tr {
+    font-style: italic;
+    text-align: right;
+}
+form {
+    width: 500px;
+    padding: 0px 10px;
+    border: thin dashed darkgrey;
+    border-radius: 5px;
+}
+input, select, textarea {
+    font: 14pt Courier;
+    padding: 5pt;
+    border: medium double black;
+    border-radius: 5px;
+}
+input[type=submit] {
+    font: bold 20pt Verdana;
+    text-transform: uppercase;
+    width: 250px;
+    border: thick solid black;
+}
+input:valid {border-color: green;}
+input:invalid {
+    border-color: red;
+    background-color: red;
+}
+input:focus {background-color: yellow;}
+input[type=image] {
+    border-style: none;
+    background-color: none;
+}
+footer {
+    text-align: right;
+    background-color: white;
+    height: 120pt;
+    left: 0pt;
+    right: 0pt;
+    bottom: 0pt;
+}
+div#tablecont {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+div#tablecont > div {display: table-row;}
+div#tablecont > div > * {
+    display: table-cell;
+    vertical-align: top;
+}
+/*
+    border-top: 2pt lightgrey dashed;
+    width: 50%;
+    min-width: 300px;
+    margin-left: 50%;
+    margin-top: 20px;
+*/
