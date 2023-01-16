@@ -1,13 +1,13 @@
-@media screen and (max-width: 480px) {
-    body {background: transparent;}
-    header h1, nav, main, footer {margin-left: 8pt;}
+@media only screen and (max-width: 480px) {
+    body {background: transparent !important;}
+    header h1, nav, main, footer {margin-left: 8pt !important;}
     header h1 {
-        font-size: 28pt;
-        background: black;
+        font-size: 28pt !important;
+        background: black !important;
     }
-    nav a:active, nav a:hover {transform: translateY(4px);}
-    div#discography > div {border: 1px solid black;}
-    div.tbl > div {display: table-column;}
+    nav a:active, nav a:hover {transform: translateY(4px) !important;}
+    div#discography > div {border: 1px solid black !important;}
+    div.tbl > div {display: table-column !important;}
     .youtube {width: auto !important;}
 }
 @media print {
