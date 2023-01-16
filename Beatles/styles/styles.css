@@ -1,10 +1,14 @@
 @media only screen and (max-width: 480px) {
     body {background: transparent !important;}
-    header h1, nav, main, footer {margin-left: 8pt !important;}
+    header h1, nav, main {margin-left: 8pt !important;}    
+  footer p {margin-left: 45pt !important;}
     header h1 {
         font-size: 28pt !important;
         background: black !important;
     }
+  nav {
+    font-size: 10pt !important;
+  }
     nav a:active, nav a:hover {transform: translateY(4px) !important;}
     div#discography > div {border: 1px solid black !important;}
     div.tbl > div {display: table-column !important;}
@@ -54,7 +58,9 @@ nav {
     border: 4px solid grey;
     font: bold 16pt Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    
 
 }
 nav a {display:block;}
