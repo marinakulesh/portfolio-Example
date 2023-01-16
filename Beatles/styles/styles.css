@@ -1,7 +1,7 @@
 @media only screen and (max-width: 480px) {
     body {background: transparent !important;}
     header h1, nav, main {margin-left: 8pt !important;}    
-  footer p {margin-left: 45pt !important;}
+    footer p {margin-left: 45pt !important;}
     header h1 {
         font-size: 28pt !important;
         background: black !important;
@@ -13,6 +13,9 @@
     div#discography > div {border: 1px solid black !important;}
     div.tbl > div {display: table-column !important;}
     .youtube {width: auto !important;}
+    figure img {width: 100%;}
+    aside img {width: 100%;}
+    div.tbl, div.tbl > div, div.tbl > div > * {display: block !important;}
 }
 @media print {
     body {background: transparent;}
